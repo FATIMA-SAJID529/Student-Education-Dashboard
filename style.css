@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff0f5;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #000, #ff4c8b);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: linear-gradient(180deg, #000, #ff4c8b);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    flex: 1;
+    padding-left: 1rem;
+}
+
+/* Cards (Calendar, Forms, GPA, Chart, etc.) */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    background: #ffe6f0;
+}
+
+/* GPA Styling */
+.gpa {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4c8b;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #000, #ff4c8b);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    transition: background 0.3s ease;
+}
+
+.footer:hover {
+    background: linear-gradient(to right, #111, #e03d7c);
+}
+
+/* Form Elements */
+input, textarea, select, button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    background: #ff4c8b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e03d7c;
+}
+
+/* Calendar Table */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
